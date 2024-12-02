@@ -80,7 +80,9 @@ function Franchise() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/send-franchise-details", {
+      // const response = await fetch("http://localhost:5000/send-franchise-details", {
+      const response = await fetch("https://rocketbackend.onrender.com/send-franchise-details", {
+        method: "POST",
         method: "POST",
         headers: {
           "Content-Type": "application/json",

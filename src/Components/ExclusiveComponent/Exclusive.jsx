@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Exclusive.css";
 import GLT from "../../Assets/Image/Extraservice/GlassTreatment.jpeg";
 import EC from "../../Assets/Image/Extraservice/EngineTreatment.jpeg";
