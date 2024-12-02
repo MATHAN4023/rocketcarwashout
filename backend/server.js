@@ -46,17 +46,17 @@ app.post('/send-franchise-details', (req, res) => {
   const { name, address, district, state, email, phone } = req.body;
 
   // Path to PDF file
-  const pdfPath = path.join(__dirname, 'RacketCarwashFranchise.pdf');
+  const pdfPath = path.join(__dirname, 'RocketCarwashFranchise.pdf');
 
   // Mail to the user
   const userMailOptions = {
     from: 'mathaniyappan2023@gmail.com',
     to: email,
-    subject: 'Thank you for your interest in Racket Carwash Franchise',
-    text: `Dear ${name},\n\nThank you for your interest in our franchise. Please find attached our franchise details.\n\nBest regards,\nRacket Carwash Team`,
+    subject: 'Thank you for your interest in Rocket Carwash Franchise',
+    text: `Dear ${name},\n\nThank you for your interest in our franchise. Please find attached our franchise details.\n\nBest regards,\nRocket Carwash Team`,
     attachments: [
       {
-        filename: 'RacketCarwashFranchise.pdf',
+        filename: 'RocketCarwashFranchise.pdf',
         path: pdfPath,
       },
     ],
