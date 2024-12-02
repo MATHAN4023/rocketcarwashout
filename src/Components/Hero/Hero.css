@@ -1,0 +1,181 @@
+.hero-container {
+  font-family: "CustomFont";
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-subtext {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.highlight-years {
+  color: red;
+  font-weight: bold;
+}
+
+.car-image {
+  max-height: 800px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.boxley{
+  margin-left: -50px;
+}
+
+.mycontainer{
+  border: 2px solid red;
+  border-radius: 25px;
+  background-color: white;
+  /* height: 10vh; */
+}
+
+.service-box{
+  margin-top: 10px;
+}
+
+
+.pad{
+  /* padding: 1rem; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Service Cards */
+.service-card {
+  background-color: #fff;
+  padding: 1px;
+  margin-top: 10px;
+  border-radius: 25px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+ 
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-icon {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.service-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  /* color: white; */
+}
+
+/* Call-to-Action Button */
+.cta-but {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  /* border: 2px solid red; */
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  /* position: absolute; */
+}
+
+.classblack{
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: -10px;
+
+}
+
+/* .cta-but:hover {
+  background-color: red;
+  color: #fff;
+} */
+
+/* Responsive Adjustments */
+/* @media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .car-image {
+    max-height: 300px;
+  }
+
+  .hero-subtext {
+    font-size: 1.2rem;
+    margin-left: -50px;
+  }
+
+  .service-icon {
+    max-height: 70px;
+  }
+} */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .car-image {
+    max-height: 300px;
+  }
+
+  .hero-subtext {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+
+  .service-icon {
+    max-height: 70px;
+  }
+  .img-flu{
+    max-width: 120px;
+  }
+  .boxley{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .car-image {
+    max-height: 400px;
+  }
+
+  .hero-subtext {
+    font-size: 1.4rem;
+  }
+
+  .service-icon {
+    max-height: 40px;
+  }
+}

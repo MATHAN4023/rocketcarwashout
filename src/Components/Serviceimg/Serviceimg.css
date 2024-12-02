@@ -1,0 +1,8 @@
+.serviceimage{
+    max-width: 100%;
+}
+
+.sevice-container img{
+    border-radius: 25px;
+    border: 5px solid red;
+}

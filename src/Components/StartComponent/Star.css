@@ -1,0 +1,24 @@
+.subtextstart{
+    font-size: x-large;
+    color: gray;
+}
+
+.headtextstar{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.myflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+.headtextstar{
+    text-align: center;
+}
+.subtextstart{
+    text-align: center;
+}
+}

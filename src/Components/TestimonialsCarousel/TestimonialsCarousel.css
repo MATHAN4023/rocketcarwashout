@@ -1,0 +1,81 @@
+
+.carousel-control-prev{
+    display: none;
+}
+.carousel-control-next{
+    display: none;
+}
+
+
+  
+  .mydiv img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blockquote {
+    font-size: 3rem; /* Adjust for readability */
+    font-style: italic;
+    margin: 0; /* No extra spacing */
+  }
+  
+  .blockquote-footer {
+    font-size: 1rem; /* Slightly smaller text for the footer */
+    margin-top: 10px;
+    color: #ccc; /* Lighter text for the footer */
+  }
+  
+/* Default layout: Side-by-side for larger screens */
+.mydiv {
+    display: flex;
+    flex-direction: row; /* Image and content side-by-side */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  
+  /* Mobile View: Image on top, content below */
+  @media (max-width: 768px) {
+    .mydiv {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      padding: 0;
+    }
+  
+    .mydiv img {
+      width: 100%; /* Full width on mobile */
+      max-width: 300px; /* Limit the image size */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 1rem; /* Add spacing below the image */
+    }
+  
+    .blockquote {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+      margin: 0; /* Remove extra margins */
+    }
+  
+    .blockquote-footer {
+      font-size: 0.9rem; /* Smaller footer font */
+      margin-top: 0.5rem; /* Add spacing */
+      color: #ccc; /* Lighter text color */
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 576px) {
+    .mydiv img {
+      width: 90%; /* Further reduce image width */
+      max-width: none; /* Remove width limits */
+    }
+  
+    .blockquote {
+      font-size: 1rem; /* Compact text for extra-small screens */
+    }
+  
+    .blockquote-footer {
+      font-size: 0.8rem; /* Compact footer text */
+    }
+  }
+  
+  
