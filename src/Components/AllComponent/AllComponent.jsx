@@ -28,7 +28,7 @@ function AllComponent() {
       <Franchise />
       <Star />
       <Locations />
-      <TestimonialsCarousel />
+      {/* <TestimonialsCarousel /> */}
       <Appinstall />
       <Footer />
 

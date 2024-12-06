@@ -7,7 +7,7 @@ import spring from "../../Assets/Svg/spring.svg";
 import spring2 from "../../Assets/Svg/Spiner2.svg";
 import admin1 from "../../Assets/Image/cl.jpg";
 // import admin2 from '../../Assets/Image/Jhon.jpg'
-import admin2 from '../../Assets/Image/Admin3.jpg'
+import admin2 from "../../Assets/Image/Admin3.jpg";
 
 function About() {
   useEffect(() => {
@@ -35,8 +35,8 @@ function About() {
           <div className="img-container">
             <img src={admin2} alt="Admin" />
           </div>
-          <p className="color-red my-2">Mr.John</p>
-          <p className="color-white">Business Analyst</p>
+          <p className="color-red my-2 tex-cen">Mr.John</p>
+          <p className="color-white tex-cen spaceremove">Business Analyst</p>
         </div>
         <div className="col-lg-5" data-aos="fade-left">
           <p className="about-text-content">
@@ -63,12 +63,14 @@ function About() {
             world of perfection."
           </p>
         </div>
-        <div className="col-lg-5 alighend" data-aos="zoom-in">
+        <div className="col-lg-5 alighend des" data-aos="zoom-in">
           <div className="img-container-1">
             <img src={admin1} alt="Admin" />
           </div>
-          <p className="color-red2 my-2">Mr .Clayton</p>
-          <p className="color-white2">Position</p>
+          
+            <p className="color-red my-2 tex-cen">Mr.Clayton</p>
+            <p className="spaceremove color-white tex-cen">Position</p>
+          
         </div>
         <div className="col-lg-1 spring flip-horizontal" data-aos="fade-left">
           <img src={spring2} alt="Loading" />

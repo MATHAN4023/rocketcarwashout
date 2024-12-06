@@ -58,7 +58,7 @@ function Hero() {
         </div>
         <div className="row align-items-center justify-content-center  poflx">
           {/* Subheading */}
-          <div
+          {/* <div
             data-aos="fade-right"
             className="col-12 col-md-2 text-center mb-3 mb-md-0"
           >
@@ -66,12 +66,12 @@ function Hero() {
               More than <br />{" "}
               <span className="highlight-years">12 Months</span>
             </p>
-          </div>
+          </div> */}
 
           {/* Car Image */}
           <div
             data-aos="fade-right"
-            className="col-12 col-md-8 text-center mb-3 mb-md-0"
+            className="col-12 col-md-12 text-center mb-3 mb-md-0"
           >
             <img
               src={mainimg} // Replace with your local car image path
@@ -82,7 +82,7 @@ function Hero() {
           </div>
 
           {/* Button */}
-          <div
+          {/* <div
             data-aos="fade-left"
             className="col-12 col-md-2 boxley  text-start"
           >
@@ -90,7 +90,7 @@ function Hero() {
               <img src={Circle} className="col-4" alt="" srcset="" />
               <div className="col-12 classblack">Look All Service</div>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Services Section */}
