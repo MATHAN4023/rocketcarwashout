@@ -15,6 +15,7 @@ import Footer from "./Components/Footer/Footer";
 import Exclusive from "./Components/ExclusiveComponent/Exclusive";
 import ChatBot from "./Components/ChatBot/ChatBot";
 import Franchise from "./Components/Franchise/Franchise";
+import Whyus from "./Components/Whyus/Whyus";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/exclusive" element={<Exclusive />} />
         <Route path="/chatbot" element={<ChatBot />} />
         <Route path="/franchise" element={<Franchise />} />
+        <Route path="/whyus" element={<Whyus />} />
       </Routes>
     </Router>
   );

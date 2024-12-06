@@ -49,7 +49,7 @@
   border-radius: 25px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-
+  border: 1px solid rgba(166, 166, 166, 0.85);
   overflow: hidden;
   position: relative;
 }

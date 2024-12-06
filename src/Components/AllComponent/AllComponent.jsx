@@ -12,6 +12,7 @@ import Footer from "../Footer/Footer";
 import Exclusive from "../ExclusiveComponent/Exclusive";
 import ChatBot from "../ChatBot/ChatBot";
 import Franchise from "../Franchise/Franchise";
+import Whyus from "../Whyus/Whyus";
 
 
 function AllComponent() {
@@ -23,6 +24,7 @@ function AllComponent() {
       <Serviceimg />
       <Counter />
       <Exclusive />
+      {/* <Whyus /> */}
       <Franchise />
       <Star />
       <Locations />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal, Form, Alert } from "react-bootstrap";
 import "./Franchise.css";
+import Whyus from "../Whyus/Whyus";
 
 function Franchise() {
   const [showModal, setShowModal] = useState(false);
@@ -107,6 +108,8 @@ function Franchise() {
 
   return (
     <div className="Fran my-5">
+
+      <Whyus/>
       <div className="row myc my-5">
         <div className="col-lg-8">
           <p className="headtextfran">Let's Grow Together by Building a Franchise</p>

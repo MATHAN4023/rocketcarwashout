@@ -1,0 +1,113 @@
+.circle-container {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .im {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .card {
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  .card-body{
+    flex: none;
+  }
+  
+  /* Card positions for 6 cards around the circle */
+  .card1 {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgb(6, 197, 255); */
+  }
+  
+  .card2 {
+    top: 25%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card3 {
+    top: 75%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card4 {
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card6 {
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .circle-container {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .im {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .card {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circle-container {
+        width: 330px;
+        height: 315px;
+        margin-left: -135px;
+    }
+  
+    .im {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .card {
+      width: 100px;
+      height: 60px;
+    }
+
+    .card-title{
+      font-size: 10px;
+
+    }
+  }
+  

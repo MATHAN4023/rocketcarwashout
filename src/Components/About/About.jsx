@@ -5,7 +5,9 @@ import "./About.css";
 import AOS from "aos";
 import spring from "../../Assets/Svg/spring.svg";
 import spring2 from "../../Assets/Svg/Spiner2.svg";
-import admin1 from "../../Assets/Image/Admin1.png";
+import admin1 from "../../Assets/Image/cl.jpg";
+// import admin2 from '../../Assets/Image/Jhon.jpg'
+import admin2 from '../../Assets/Image/Admin3.jpg'
 
 function About() {
   useEffect(() => {
@@ -31,17 +33,20 @@ function About() {
         </div>
         <div className="col-lg-5" data-aos="fade-up">
           <div className="img-container">
-            <img src={admin1} alt="Admin" />
+            <img src={admin2} alt="Admin" />
           </div>
-          <p className="color-red my-2">Admin Name</p>
-          <p className="color-white">Position</p>
+          <p className="color-red my-2">Mr.John</p>
+          <p className="color-white">Business Analyst</p>
         </div>
         <div className="col-lg-5" data-aos="fade-left">
           <p className="about-text-content">
-            "They say that detailers are not made, they are born. Detailing is a
-            way of life. Getting into the minutest of details in the quest for
-            perfection. Hence the name 'Detailingwolves.' Introducing you to the
-            world of perfection."
+            "Mr.John is a seasoned business analyst with a keen eye for market
+            trends and strategic decision-making. A fitness enthusiast and car
+            lover, he balances his professional life with a passion for health
+            and automobiles. As the owner of Rocket Car Wash, he combines his
+            business acumen with his enthusiasm for cars, providing exceptional
+            car detailing services while maintaining a commitment to quality and
+            customer satisfaction."
           </p>
         </div>
         <div className="col-lg-1 spring"></div>
@@ -62,7 +67,7 @@ function About() {
           <div className="img-container-1">
             <img src={admin1} alt="Admin" />
           </div>
-          <p className="color-red2 my-2">Admin Name</p>
+          <p className="color-red2 my-2">Mr .Clayton</p>
           <p className="color-white2">Position</p>
         </div>
         <div className="col-lg-1 spring flip-horizontal" data-aos="fade-left">

@@ -2,21 +2,23 @@
     background-color: white;
     border: 5px solid red;
     border-radius: 25px;
+    /* height: 70vh; */
 }
 .dspac{
     display: flex;
     justify-content: space-around;
 }
-.img-count1 {
+.imgcl img {
     max-height: 80%;
 }
 
 @media (max-width: 768px) {
 
   
-    .img-count1 {
-        max-height: 40%;
+    .imgcl img {
+        max-height: 50%;
     }
-   
+
+ 
   
 }

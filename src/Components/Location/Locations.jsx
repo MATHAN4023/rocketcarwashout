@@ -18,84 +18,84 @@ const locations = [
   {
     lat: 11.0168,
     lng: 76.9558,
-    name: "DETAILING WOLVES - Coimbatore",
+    name: "Rocket CarWash - Coimbatore",
     address: "123 Example Street, Coimbatore, Tamil Nadu",
     phone: "+91 123 456 7890",
   },
   {
     lat: 13.0827,
     lng: 80.2707,
-    name: "DETAILING WOLVES - Chennai",
+    name: "Rocket CarWash - Chennai",
     address: "456 Sample Road, Chennai, Tamil Nadu",
     phone: "+91 987 654 3210",
   },
   {
     lat: 8.7294,
     lng: 77.9194,
-    name: "DETAILING WOLVES - Kanyakumari",
+    name: "Rocket CarWash - Kanyakumari",
     address: "789 Test Lane, Kanyakumari, Tamil Nadu",
     phone: "+91 456 789 0123",
   },
   {
     lat: 28.7041,
     lng: 77.1025,
-    name: "DETAILING WOLVES - New Delhi",
+    name: "Rocket CarWash - New Delhi",
     address: "123 New Street, New Delhi, India",
     phone: "+91 123 456 7890",
   },
   {
     lat: 19.076,
     lng: 72.8777,
-    name: "DETAILING WOLVES - Mumbai",
+    name: "Rocket CarWash - Mumbai",
     address: "456 Sample Lane, Mumbai, India",
     phone: "+91 987 654 3210",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
   {
     lat: 22.5726,
     lng: 88.3639,
-    name: "DETAILING WOLVES - Kolkata",
+    name: "Rocket CarWash - Kolkata",
     address: "789 Test Road, Kolkata, India",
     phone: "+91 456 789 0123",
   },
@@ -129,9 +129,10 @@ const Locations = () => {
 
   return (
     <div className="container aboutcontainer my-5">
+      <hr style={{color:'white'}} />
       <div className="row">
         <div className="col text-center about-txt" data-aos="fade-down">
-          Our Locations
+          Our Branches
         </div>
       </div>
       <div className="container1  my-5">
@@ -171,7 +172,7 @@ const Locations = () => {
                           <div>{location.name} </div>
                           {/* <br /> */}
                           <div className="subdf"> {location.address}</div>
-                          <div  className="subdf"> {location.phone}</div>
+                          <div className="subdf"> {location.phone}</div>
                         </div>
                       </button>
                     </li>
