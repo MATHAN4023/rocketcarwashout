@@ -18,7 +18,7 @@ function About() {
   }, []);
 
   return (
-    <div className="container aboutcontainer my-5">
+    <div className="container aboutcontainer my-5" id="about">
       {/* About Us Heading */}
       <div className="row">
         <div className="col text-center about-txt" data-aos="fade-down">
@@ -27,7 +27,7 @@ function About() {
       </div>
 
       {/* Details Container */}
-      <div className="row my-5">
+      <div className="row my-5" >
         <div className="col-lg-1 spring" data-aos="fade-right">
           <img src={spring} alt="Loading" />
         </div>
@@ -56,21 +56,22 @@ function About() {
       <div className="row my-5 blockdiv-1">
         <div className="col-lg-1 spring" data-aos="fade-right"></div>
         <div className="col-lg-5" data-aos="fade-up">
-          <p className="about-text-content">
-            "They say that detailers are not made, they are born. Detailing is a
-            way of life. Getting into the minutest of details in the quest for
-            perfection. Hence the name 'Detailingwolves.' Introducing you to the
-            world of perfection."
+          <p className="about-text-content ">
+            "Clayton is a versatile entrepreneur leading multiple ventures,
+            including SCHUMAK EQUIPMENT INDIA PVT LTD as Executive Director and
+            DETAILING WOLVES PVT LTD as CEO. As Managing Director of PRO ROCKET
+            CAR WASH PVT LTD, BIGBOYZ DETAIL SHOP PVT LTD, and NEXTGEN
+            CONSULTANTS, he excels in automotive care, detailing, and strategic
+            consultancy, driving innovation and growth across industries."
           </p>
         </div>
         <div className="col-lg-5 alighend des" data-aos="zoom-in">
           <div className="img-container-1">
             <img src={admin1} alt="Admin" />
           </div>
-          
-            <p className="color-red my-2 tex-cen">Mr.Clayton</p>
-            <p className="spaceremove color-white tex-cen">Position</p>
-          
+
+          <p className="color-red my-2 tex-cen">Mr.Clayton</p>
+          <p className="spaceremove color-white tex-cen">Position</p>
         </div>
         <div className="col-lg-1 spring flip-horizontal" data-aos="fade-left">
           <img src={spring2} alt="Loading" />

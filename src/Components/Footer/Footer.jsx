@@ -3,7 +3,7 @@ import logo from "../../Assets/Icons/Logorocket.png";
 
 function Footer() {
   return (
-    <div className="container footcontainer my-5">
+    <div className="container footcontainer my-5" id="contact">
       <div className="row mainfoot">
         {/* Logo and Copyright Section */}
         <div className="col-lg-4 col-sm-12 withlogo text-center">

@@ -13,18 +13,20 @@ import Exclusive from "../ExclusiveComponent/Exclusive";
 import ChatBot from "../ChatBot/ChatBot";
 import Franchise from "../Franchise/Franchise";
 import Whyus from "../Whyus/Whyus";
+import Appbar from "../Appbar/Appbar";
 
 
 function AllComponent() {
   return (
     <div>
+      <Appbar />
       <Hero />
       <ChatBot />
       <About />
       <Serviceimg />
       <Counter />
       <Exclusive />
-      {/* <Whyus /> */}
+      <Whyus />
       <Franchise />
       <Star />
       <Locations />

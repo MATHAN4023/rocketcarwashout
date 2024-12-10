@@ -16,89 +16,41 @@ const shopIcon = new L.Icon({
 
 const locations = [
   {
-    lat: 11.0168,
-    lng: 76.9558,
-    name: "Rocket CarWash - Coimbatore",
-    address: "123 Example Street, Coimbatore, Tamil Nadu",
-    phone: "+91 123 456 7890",
+    lat: 11.076195688537155,
+    lng: 77.02127803480288,
+    name: "Rocket CarWash - Villankurichi",
+    address: "67/1a, Kalapatti Main Road, Rathinagiri Nagar, Villankurichi, Coimbatore, Tamil Nadu 641035",
+    phone: "+91 7947417502",
   },
-  {
-    lat: 13.0827,
-    lng: 80.2707,
-    name: "Rocket CarWash - Chennai",
-    address: "456 Sample Road, Chennai, Tamil Nadu",
+  { 
+    lat: 11.045309400354853,
+    lng: 76.93949747471997,
+    name: "Rocket CarWash - Koundampalayam",
+    address: "204/3, TVS Nagar - Koundampalayam Road, Kannamal Nagar Rd, Ashok Nagar West, Koundampalayam, Coimbatore, Tamil Nadu 641030",
     phone: "+91 987 654 3210",
   },
-  {
-    lat: 8.7294,
-    lng: 77.9194,
-    name: "Rocket CarWash - Kanyakumari",
-    address: "789 Test Lane, Kanyakumari, Tamil Nadu",
+  { 
+    lat: 11.252753504728656,
+    lng: 78.16651583341715,
+    name: "Rocket CarWash - Namakkal",
+    address: "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
     phone: "+91 456 789 0123",
   },
-  {
-    lat: 28.7041,
-    lng: 77.1025,
-    name: "Rocket CarWash - New Delhi",
-    address: "123 New Street, New Delhi, India",
+  { 
+    lat: 13.085186376589453,
+    lng: 80.1769089013419,
+    name: "Rocket CarWash - Mogappair",
+    address: " 141, Paneer Nagar Main Rd, VGP Nagar, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037",
     phone: "+91 123 456 7890",
   },
-  {
-    lat: 19.076,
-    lng: 72.8777,
-    name: "Rocket CarWash - Mumbai",
-    address: "456 Sample Lane, Mumbai, India",
+  { 
+    lat: 13.531302,
+    lng: 78.617992,
+    name: "Rocket CarWash - Andhra Pradesh",
+    address: "Madanapalle Rd, gangavaram, palamaner, Reddivaripalle, Andhra Pradesh 517408",
     phone: "+91 987 654 3210",
   },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
-  {
-    lat: 22.5726,
-    lng: 88.3639,
-    name: "Rocket CarWash - Kolkata",
-    address: "789 Test Road, Kolkata, India",
-    phone: "+91 456 789 0123",
-  },
+  
 ];
 
 const MapFlyTo = ({ lat, lng }) => {

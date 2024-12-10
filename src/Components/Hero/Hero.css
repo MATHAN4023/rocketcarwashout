@@ -17,6 +17,10 @@ h1 {
   color: white;
 }
 
+.pdd {
+  margin-top: 6rem;
+}
+
 .hero-subtext {
   font-size: 1rem;
   color: rgb(255, 255, 255);
@@ -35,29 +39,27 @@ h1 {
   display: flex;
   position: relative;
 }
-.boxley{
+.boxley {
   margin-left: -50px;
 }
 
-.mycontainer{
+.mycontainer {
   border: 2px solid red;
   border-radius: 25px;
   background-color: white;
   /* height: 10vh; */
 }
 
-.service-box{
+.service-box {
   margin-top: 10px;
 }
 
-
-.pad{
+.pad {
   /* padding: 1rem; */
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
 
 /* Service Cards */
 .service-card {
@@ -67,7 +69,6 @@ h1 {
   border-radius: 25px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
- 
 }
 
 .service-card:hover {
@@ -78,7 +79,6 @@ h1 {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-
 }
 
 .service-text {
@@ -104,13 +104,12 @@ h1 {
   /* position: absolute; */
 }
 
-.classblack{
+.classblack {
   background-color: black;
   display: flex;
   justify-content: start;
   align-items: center;
   margin-left: -10px;
-
 }
 
 /* .cta-but:hover {
@@ -138,6 +137,9 @@ h1 {
   }
 } */
 @media (max-width: 768px) {
+  .pdd {
+    /* margin-top: 0rem; */
+  }
   h1 {
     font-size: 2rem;
   }
@@ -154,10 +156,10 @@ h1 {
   .service-icon {
     max-height: 70px;
   }
-  .img-flu{
+  .img-flu {
     max-width: 120px;
   }
-  .boxley{
+  .boxley {
     display: none;
   }
 }

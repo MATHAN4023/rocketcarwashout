@@ -18,6 +18,11 @@
   color: white;
   text-align: start;
 }
+.about-text-content1 {
+  font-size: 1.6rem;
+  color: white;
+  text-align: end;
+}
 .color-red {
   color: red;
   font-size: x-large;
@@ -80,6 +85,10 @@
   width: 100%;
 }
   .about-text-content {
+    font-size: x-large;
+    text-align: center;
+  }
+  .about-text-content1 {
     font-size: x-large;
     text-align: center;
   }

@@ -48,7 +48,7 @@ const Exclusive = () => {
 
   return (
     // <div className="exclusive-section" ref={sectionRef}>
-    <div className="exclusive-section" >
+    <div className="exclusive-section" id="services">
       <div className="exclusive-title">Our Service's</div>
       <div className="exclusive-cards-container">
         {services.map((service, index) => (

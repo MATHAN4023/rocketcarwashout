@@ -6,7 +6,7 @@ import "./Appinstall.css";
 
 function Appinstall() {
   return (
-    <div className="container aboutcontainer my-5">
+    <div className="container appcontainer my-5">
       <div className="row mywhite my-5">
         <div className="row">
           <div
@@ -14,10 +14,10 @@ function Appinstall() {
             style={{ color: "black" }}
             data-aos="fade-down"
           >
-            Coming soon
+            Launching Shortly!
           </div>
         </div>
-        <div className="row">
+        <div className="row toppa">
         <div className="col-lg-1"></div>
           <div className="col-lg-6 col-sm-12 myflex">
             <div>

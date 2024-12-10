@@ -1,52 +1,83 @@
 import React from "react";
 import "./Whyus.css";
-import roc from "../../Assets/Image/roc1.png";
+import roc from "../../Assets/Image/roc1.png"; // Replace with your image path
+import roc1 from "../../Assets/Icons/Rock1.png"; // Replace with your image path
+import logroc from "../../Assets/Icons/Logorocket.png";
+
+import f1 from "../../Assets/Image/Fran/f1.jpeg";
+import f2 from "../../Assets/Image/Fran/f2.jpeg";
+import f3 from "../../Assets/Image/Fran/f3.jpeg";
+import f4 from "../../Assets/Image/Fran/f4.jpeg";
+import f5 from "../../Assets/Image/Fran/f5.jpeg";
+import f6 from "../../Assets/Image/Fran/f6.jpeg";
 
 function Whyus() {
   return (
-    <div className="Fran my-5">
-      <div className="circle-container">
-        <img
-          className="im"
-          src={roc}
-          alt="Machine"
-          style={{ height: "200px", width: "200px" }}
-        />
+    <div className=" fluied appcontainer  ">
+      <div className="row con">
+        <div className="col-lg-6 col-sm-12 d-flex">
+          <div className="Main-text-container">
+            {/* <div className="log-img">
+              <img src={roc1} alt="Logo" className="logo-image" />
+            </div>
+            <div className="spaceremover"> */}
 
-        {/* Six cards */}
-        <div className="card card1">
-          <div className="card-body">
-            <h5 className="card-title text-center">High Roll</h5>
+            <div className="main-text headtextstar">
+              Own the Future, One Franchise at a Time!
+            </div>
+            <div className="sub-text subtextstart">
+              Join a proven business model and unlock your potential for
+              success—start your franchise journey today!
+            </div>
+            {/* </div> */}
           </div>
         </div>
-
-        <div className="card card2">
-          <div className="card-body">
-            <h5 className="card-title text-center">About Machines</h5>
+        <div className="col-lg-6  content-ca">
+          <div className="sec-main-cont">
+            <div className="div1">
+              {" "}
+              <div className="div11 col-lg-6 ">
+                <div className="div111">
+                  <div className="mm">
+                    <img className="divimg" src={f5} alt="" />
+                    <div className="image-overlay-text1">Chemical & Row materials support</div>
+                  </div>
+                </div>
+              </div>
+              <div className="div12 col-lg-6  kkkk">
+                <div className="div13">
+                  <div className="mm">
+                    <img className="divimg-1" src={f2} alt="" />
+                    <div className="image-overlay-text1">Marketing Support</div>
+                  </div>
+                </div>
+                <div className="div14">
+                  <div className="mm">
+                    <img className="divimg-2" src={f1} alt="" />
+                    <div className="image-overlay-text1"> High ROI</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="card card3">
-          <div className="card-body">
-            <h5 className="card-title text-center">Training</h5>
-          </div>
-        </div>
-
-        <div className="card card4">
-          <div className="card-body">
-            <h5 className="card-title text-center">Trained Manpower Support</h5>
-          </div>
-        </div>
-
-        <div className="card card5">
-          <div className="card-body">
-            <h5 className="card-title text-center">Chemical and Raw Material Support</h5>
-          </div>
-        </div>
-
-        <div className="card card6">
-          <div className="card-body">
-            <h5 className="card-title text-center">Groundbreaking Marketing Support</h5>
+          <br />
+          <div className="sec-main-cont1">
+            <div className="div18 col-lg-6  ">
+              <div className="div15">
+                <div className="mm">
+                  <img className="divimg-3" src={f3} alt="" />
+                  <div className="image-overlay-text1">Trained Man Power</div>
+                </div>
+              </div>
+            </div>
+            <div className="div18 col-lg-6  ">
+              <div className="div16">
+                <div className="mm">
+                  <img className="divimg-4" src={f4} alt="" />
+                  <div className="image-overlay-text1">Training</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ function Hero() {
 
   return (
     <>
-      <div className="hero-container text-center">
+      <div className="hero-container text-center pdd" id="home">
         {/* Header Section */}
         <div data-aos="fade-up" className="mb-4">
           <h1>

@@ -105,7 +105,8 @@
 
 .subdf{
   padding-left: 1rem;
-  width: 80%;
+  /* width: 80%; */
+  max-width: 300px;
   text-align: start;
   color: gray;
   font-weight: 400;
