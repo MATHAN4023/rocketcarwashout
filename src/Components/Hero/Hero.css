@@ -18,7 +18,7 @@ h1 {
 }
 
 .pdd {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .hero-subtext {
@@ -161,6 +161,10 @@ h1 {
   }
   .boxley {
     display: none;
+  }
+  .mycontainer {
+    background-color: black;
+    color: #fff;
   }
 }
 
