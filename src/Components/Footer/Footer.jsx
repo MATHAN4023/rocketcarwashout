@@ -46,18 +46,18 @@ function Footer() {
             </p>
             {/* Social Media Links */}
             <div className="social-media mt-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              <a href="https://www.facebook.com/profile.php?id=61561567861212" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
                 <i className="fab fa-twitter"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              </a> */}
+              <a href="https://www.instagram.com/rocketcarwashvilankurichi/" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

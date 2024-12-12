@@ -12,6 +12,23 @@ import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal1.png";
 import T4 from "../../Assets/Image/RocketBranch/Place/Andhra Pradesh.png";
 import T5 from "../../Assets/Image/RocketBranch/Place/CB1.png";
 
+import N1 from "../../Assets/Image/RocketBranch/Namakal/N1.png"
+import N2 from "../../Assets/Image/RocketBranch/Namakal/N2.png"
+import N3 from "../../Assets/Image/RocketBranch/Namakal/N3.png"
+
+
+import C1 from "../../Assets/Image/RocketBranch/Chennai/C1.png"
+import C2 from "../../Assets/Image/RocketBranch/Chennai/C2.png"
+import C3 from "../../Assets/Image/RocketBranch/Chennai/C3.png"
+import C4 from "../../Assets/Image/RocketBranch/Chennai/C4.png"
+
+
+import K1 from "../../Assets/Image/RocketBranch/Kownd/K1.png"
+import K2 from "../../Assets/Image/RocketBranch/Kownd/K2.png"
+
+
+import A1 from "../../Assets/Image/RocketBranch/Andra/A1.png"
+
 const Branch = () => {
   const cards = [
     {
@@ -29,7 +46,7 @@ const Branch = () => {
       image: T3,
       address:
         "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
-      gallery: ["gallery3-1.jpg", "gallery3-2.jpg", "gallery3-3.jpg"],
+      gallery: [N1,N2,N3],
     },
     {
       id: 4,
@@ -37,7 +54,7 @@ const Branch = () => {
       image: T2,
       address:
         "141, Paneer Nagar Main Rd, VGP Nagar, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037",
-      gallery: ["gallery4-1.jpg", "gallery4-2.jpg"],
+      gallery: [C1,C2,C3,C4],
     },
     {
       id: 2,
@@ -45,7 +62,7 @@ const Branch = () => {
       image: T5,
       address:
         "204/3, TVS Nagar - Koundampalayam Road, Kannamal Nagar Rd, Ashok Nagar West, Koundampalayam, Coimbatore, Tamil Nadu 641030",
-      gallery: ["gallery2-1.jpg", "gallery2-2.jpg"],
+      gallery: [K1,K2],
     },
     {
       id: 5,
@@ -53,7 +70,7 @@ const Branch = () => {
       image: T4,
       address:
         "Madanapalle Rd, gangavaram, palamaner, Reddivaripalle, Andhra Pradesh 517408",
-      gallery: ["gallery5-1.jpg", "gallery5-2.jpg", "gallery5-3.jpg"],
+      gallery: [A1],
     },
     
   ];

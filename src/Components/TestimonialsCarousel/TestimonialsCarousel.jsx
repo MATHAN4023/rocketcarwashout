@@ -2,34 +2,39 @@ import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./TestimonialsCarousel.css";
+import TM1 from '../../Assets/Image/RocketBranch/Testimon/T1.jpg'
+import TM2 from '../../Assets/Image/RocketBranch/Testimon/T2.png'
+import TM3 from '../../Assets/Image/RocketBranch/Testimon/T3.png'
 
 const TestimonialsCarousel = () => {
   const testimonials = [
     {
-      image: "https://via.placeholder.com/200", // Replace with actual image
+      image: TM1, // Replace with actual image
       quote:
-        "Productivity is being able to do things that you were never able to do before.",
-      name: "Aswin",
+        "The best car wash I’ve ever had! My car looks brand new and shiny.",
+      name: "Ashwini",
       designation: "Doctor",
     },
     {
-      image: "https://via.placeholder.com/200", // Replace with actual image
+      image: TM2, // Replace with actual image
       quote:
-        "Productivity is being able to do things that you were never able to do before.",
-      name: "Aswin",
-      designation: "Doctor",
-    },
-    {
-      image: "https://via.placeholder.com/200", // Replace with actual image
-      quote: "Success is not final; failure is not fatal: it is the courage to continue that counts.",
-      name: "Priya",
+        "Fantastic service! The team was thorough, and my car feels spotless inside and out.",
+      name: "Ashwin",
       designation: "Engineer",
     },
     {
-      image: "https://via.placeholder.com/200", // Replace with actual image
-      quote: "Success is not final; failure is not fatal: it is the courage to continue that counts.",
-      name: "Priya",
-      designation: "Engineer",
+      image: TM3, // Replace with actual image
+      quote:
+        "Quick and efficient! I love the attention to detail in cleaning every corner.",
+      name: "Ramesh",
+      designation: "Entrepreneur",
+    },
+    {
+      image: TM1, // Replace with actual image
+      quote:
+        "Excellent value for the price. My car has never been this clean!",
+      name: "Sneha",
+      designation: "Designer",
     },
     // Add more testimonials here
   ];
@@ -44,7 +49,7 @@ const TestimonialsCarousel = () => {
     <div className="d-flex justify-content-center align-items-center vh-100 text-white">
       <div className="w-75">
         <h2 className="text-center mb-4 about-txt" data-aos="fade-down">
-          Over Customers Opinion
+          Our Customers' Reviews
         </h2>
         <Carousel
           indicators={false}
