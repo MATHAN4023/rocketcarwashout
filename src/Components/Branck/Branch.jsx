@@ -5,29 +5,28 @@ import "./Branch.css";
 import v1 from "../../Assets/Image/RocketBranch/Villankurichi/1.png";
 import v2 from "../../Assets/Image/RocketBranch/Villankurichi/2.png";
 import v3 from "../../Assets/Image/RocketBranch/Villankurichi/3.png";
+import T1 from "../../Assets/Image/RocketBranch/Place/Coimbatore.png";
+import T2 from "../../Assets/Image/RocketBranch/Place/Chennai.png";
+// import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal.webp";
+import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal1.png";
+import T4 from "../../Assets/Image/RocketBranch/Place/Andhra Pradesh.png";
+import T5 from "../../Assets/Image/RocketBranch/Place/CB1.png";
 
 const Branch = () => {
   const cards = [
     {
       id: 1,
       title: "Rocket CarWash - Villankurichi",
-      image: "image1.jpg",
+      image: T1,
       address:
         "67/1a, Kalapatti Main Road, Rathinagiri Nagar, Villankurichi, Coimbatore, Tamil Nadu 641035",
       gallery: [v1, v2, v3],
     },
-    {
-      id: 2,
-      title: "Rocket CarWash - Koundampalayam",
-      image: "image2.jpg",
-      address:
-        "204/3, TVS Nagar - Koundampalayam Road, Kannamal Nagar Rd, Ashok Nagar West, Koundampalayam, Coimbatore, Tamil Nadu 641030",
-      gallery: ["gallery2-1.jpg", "gallery2-2.jpg"],
-    },
+  
     {
       id: 3,
       title: "Rocket CarWash - Namakkal ",
-      image: "image3.jpg",
+      image: T3,
       address:
         "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
       gallery: ["gallery3-1.jpg", "gallery3-2.jpg", "gallery3-3.jpg"],
@@ -35,19 +34,28 @@ const Branch = () => {
     {
       id: 4,
       title: "Rocket CarWash - Mogappair",
-      image: "image4.jpg",
+      image: T2,
       address:
         "141, Paneer Nagar Main Rd, VGP Nagar, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037",
       gallery: ["gallery4-1.jpg", "gallery4-2.jpg"],
     },
     {
+      id: 2,
+      title: "Rocket CarWash - Koundampalayam",
+      image: T5,
+      address:
+        "204/3, TVS Nagar - Koundampalayam Road, Kannamal Nagar Rd, Ashok Nagar West, Koundampalayam, Coimbatore, Tamil Nadu 641030",
+      gallery: ["gallery2-1.jpg", "gallery2-2.jpg"],
+    },
+    {
       id: 5,
       title: "Rocket CarWash - Andhra Pradesh ",
-      image: "image5.jpg",
+      image: T4,
       address:
         "Madanapalle Rd, gangavaram, palamaner, Reddivaripalle, Andhra Pradesh 517408",
       gallery: ["gallery5-1.jpg", "gallery5-2.jpg", "gallery5-3.jpg"],
     },
+    
   ];
 
   const [showGallery, setShowGallery] = useState(false);
@@ -93,11 +101,13 @@ const Branch = () => {
             onMouseLeave={() => setHoveredCard(null)}
           >
             <div className="branch-card">
-              <img
-                src={card.image}
-                alt={card.title}
-                className="branch-card-image"
-              />
+              <div className="branch-card-image-container">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="branch-card-image"
+                />
+              </div>
               <h5 className="branch-card-title">{card.title}</h5>
               {hoveredCard === card.id && (
                 <p className="branch-address">{card.address}</p>
@@ -122,11 +132,11 @@ const Branch = () => {
         </button>
       </div>
 
-      <Modal show={showGallery} onHide={handleCloseGallery} size="lg" centered>
+      <Modal  show={showGallery} onHide={handleCloseGallery} size="lg" centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedCard?.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body style={{backgroundColor : 'black'}}>
           <div className="gallery-container">
             <div className="main-image-container">
               <img
@@ -155,11 +165,11 @@ const Branch = () => {
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <button className="btn btn-secondary" onClick={handleCloseGallery}>
             Close
           </button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </div>
   );
