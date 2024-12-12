@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./Components/Hero/Hero";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,6 +18,7 @@ import ChatBot from "./Components/ChatBot/ChatBot";
 import Franchise from "./Components/Franchise/Franchise";
 import Whyus from "./Components/Whyus/Whyus";
 import Appbar from "./Components/Appbar/Appbar";
+import Branch from "./Components/Branck/Branch";
 
 
 
@@ -39,6 +41,7 @@ function App() {
         <Route path="/franchise" element={<Franchise />} />
         <Route path="/whyus" element={<Whyus />} />
         <Route path="/appbar" element={<Appbar />} />
+        <Route path="/branch" element={<Branch />} />
       </Routes>
     </Router>
   );

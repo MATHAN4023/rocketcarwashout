@@ -14,6 +14,7 @@ import ChatBot from "../ChatBot/ChatBot";
 import Franchise from "../Franchise/Franchise";
 import Whyus from "../Whyus/Whyus";
 import Appbar from "../Appbar/Appbar";
+import Branch from "../Branck/Branch";
 
 
 function AllComponent() {
@@ -30,8 +31,9 @@ function AllComponent() {
       <Franchise />
       <Star />
       <Locations />
-      {/* <TestimonialsCarousel /> */}
+      <Branch />
       <Appinstall />
+      <TestimonialsCarousel />
       <Footer />
 
     </div>
