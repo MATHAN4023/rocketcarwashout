@@ -5,37 +5,39 @@ import "./TestimonialsCarousel.css";
 import TM1 from '../../Assets/Image/RocketBranch/Testimon/T1.jpg'
 import TM2 from '../../Assets/Image/RocketBranch/Testimon/T2.png'
 import TM3 from '../../Assets/Image/RocketBranch/Testimon/T3.png'
+import TM4 from '../../Assets/Image/RocketBranch/Testimon/Pradeep.JPG'
 
 const TestimonialsCarousel = () => {
   const testimonials = [
     {
-      image: TM1, // Replace with actual image
-      quote:
-        "The best car wash I’ve ever had! My car looks brand new and shiny.",
-      name: "Ashwini",
-      designation: "Doctor",
+      image: TM4, // Replace with actual image
+      quote: 
+        "Absolutely amazing experience! They left my car looking brand new and smelling great. Highly recommended!",
+      name: "Pradeep",
+      designation: "Social Media Influencer",
     },
     {
       image: TM2, // Replace with actual image
-      quote:
-        "Fantastic service! The team was thorough, and my car feels spotless inside and out.",
-      name: "Ashwin",
-      designation: "Engineer",
+      quote: 
+        "Super friendly staff and fantastic attention to detail. My car hasn’t looked this good in years!",
+      name: "Vikram",
+      designation: "Photographer",
     },
     {
       image: TM3, // Replace with actual image
-      quote:
-        "Quick and efficient! I love the attention to detail in cleaning every corner.",
-      name: "Ramesh",
-      designation: "Entrepreneur",
+      quote: 
+        "A truly hassle-free service. Quick, professional, and worth every penny. Great job!",
+      name: "Arun",
+      designation: "Banker",
     },
     {
-      image: TM1, // Replace with actual image
-      quote:
-        "Excellent value for the price. My car has never been this clean!",
-      name: "Sneha",
-      designation: "Designer",
+      image: TM2, // Replace with actual image
+      quote: 
+        "They took care of everything! The service was excellent, and my car looks spotless inside and out.",
+      name: "Divya",
+      designation: "Content Creator",
     },
+    
     // Add more testimonials here
   ];
 

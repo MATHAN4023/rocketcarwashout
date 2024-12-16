@@ -36,7 +36,7 @@ function About() {
             <img src={admin2} alt="Admin" />
           </div>
           <p className="color-red my-2 tex-cen">Mr.John</p>
-          <p className="color-white tex-cen spaceremove">Business Analyst</p>
+          <p className="color-white tex-cen spaceremove">Managing Director</p>
         </div>
         <div className="col-lg-5" data-aos="fade-left">
           <p className="about-text-content">
@@ -71,7 +71,7 @@ function About() {
           </div>
 
           <p className="color-red my-2 tex-cen">Mr.Clayton</p>
-          <p className="spaceremove color-white tex-cen">Position</p>
+          <p className="spaceremove color-white tex-cen">Managing Director</p>
         </div>
         <div className="col-lg-1 spring flip-horizontal" data-aos="fade-left">
           <img src={spring2} alt="Loading" />

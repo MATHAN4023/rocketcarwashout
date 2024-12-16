@@ -23,10 +23,10 @@ function AllComponent() {
       <Appbar />
       <Hero />
       <ChatBot />
-      <About />
-      <Serviceimg />
       <Counter />
       <Exclusive />
+      <Serviceimg />
+      <About />
       <Whyus />
       <Franchise />
       <Star />

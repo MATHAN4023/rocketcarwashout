@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { Modal } from "react-bootstrap";
 import "./Branch.css";
@@ -7,27 +7,23 @@ import v2 from "../../Assets/Image/RocketBranch/Villankurichi/2.png";
 import v3 from "../../Assets/Image/RocketBranch/Villankurichi/3.png";
 import T1 from "../../Assets/Image/RocketBranch/Place/Coimbatore.png";
 import T2 from "../../Assets/Image/RocketBranch/Place/Chennai.png";
-// import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal.webp";
 import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal1.png";
 import T4 from "../../Assets/Image/RocketBranch/Place/Andhra Pradesh.png";
 import T5 from "../../Assets/Image/RocketBranch/Place/CB1.png";
 
-import N1 from "../../Assets/Image/RocketBranch/Namakal/N1.png"
-import N2 from "../../Assets/Image/RocketBranch/Namakal/N2.png"
-import N3 from "../../Assets/Image/RocketBranch/Namakal/N3.png"
+import N1 from "../../Assets/Image/RocketBranch/Namakal/N1.png";
+import N2 from "../../Assets/Image/RocketBranch/Namakal/N2.png";
+import N3 from "../../Assets/Image/RocketBranch/Namakal/N3.png";
 
+import C1 from "../../Assets/Image/RocketBranch/Chennai/C1.png";
+import C2 from "../../Assets/Image/RocketBranch/Chennai/C2.png";
+import C3 from "../../Assets/Image/RocketBranch/Chennai/C3.png";
+import C4 from "../../Assets/Image/RocketBranch/Chennai/C4.png";
 
-import C1 from "../../Assets/Image/RocketBranch/Chennai/C1.png"
-import C2 from "../../Assets/Image/RocketBranch/Chennai/C2.png"
-import C3 from "../../Assets/Image/RocketBranch/Chennai/C3.png"
-import C4 from "../../Assets/Image/RocketBranch/Chennai/C4.png"
+import K1 from "../../Assets/Image/RocketBranch/Kownd/K1.png";
+import K2 from "../../Assets/Image/RocketBranch/Kownd/K2.png";
 
-
-import K1 from "../../Assets/Image/RocketBranch/Kownd/K1.png"
-import K2 from "../../Assets/Image/RocketBranch/Kownd/K2.png"
-
-
-import A1 from "../../Assets/Image/RocketBranch/Andra/A1.png"
+import A1 from "../../Assets/Image/RocketBranch/Andra/A1.png";
 
 const Branch = () => {
   const cards = [
@@ -39,14 +35,14 @@ const Branch = () => {
         "67/1a, Kalapatti Main Road, Rathinagiri Nagar, Villankurichi, Coimbatore, Tamil Nadu 641035",
       gallery: [v1, v2, v3],
     },
-  
+
     {
       id: 3,
       title: "Rocket CarWash - Namakkal ",
       image: T3,
       address:
         "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
-      gallery: [N1,N2,N3],
+      gallery: [N1, N2, N3],
     },
     {
       id: 4,
@@ -54,7 +50,7 @@ const Branch = () => {
       image: T2,
       address:
         "141, Paneer Nagar Main Rd, VGP Nagar, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037",
-      gallery: [C1,C2,C3,C4],
+      gallery: [C1, C2, C3, C4],
     },
     {
       id: 2,
@@ -62,7 +58,7 @@ const Branch = () => {
       image: T5,
       address:
         "204/3, TVS Nagar - Koundampalayam Road, Kannamal Nagar Rd, Ashok Nagar West, Koundampalayam, Coimbatore, Tamil Nadu 641030",
-      gallery: [K1,K2],
+      gallery: [K1, K2],
     },
     {
       id: 5,
@@ -72,13 +68,12 @@ const Branch = () => {
         "Madanapalle Rd, gangavaram, palamaner, Reddivaripalle, Andhra Pradesh 517408",
       gallery: [A1],
     },
-    
   ];
 
   const [showGallery, setShowGallery] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
   const [currentImage, setCurrentImage] = useState("");
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const sliderRef = useRef(null);
 
@@ -90,6 +85,20 @@ const Branch = () => {
 
   const handleCloseGallery = () => setShowGallery(false);
   const handleThumbnailClick = (image) => setCurrentImage(image);
+
+  // Update isMobile based on window width
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call on initial load
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const settings = {
     infinite: true,
@@ -114,8 +123,6 @@ const Branch = () => {
             key={card.id}
             className="branch-card-container"
             onClick={() => handleCardClick(card)}
-            onMouseEnter={() => setHoveredCard(card.id)}
-            onMouseLeave={() => setHoveredCard(null)}
           >
             <div className="branch-card">
               <div className="branch-card-image-container">
@@ -126,7 +133,8 @@ const Branch = () => {
                 />
               </div>
               <h5 className="branch-card-title">{card.title}</h5>
-              {hoveredCard === card.id && (
+              {/* Show address only on mobile or when hovering */}
+              {(isMobile || selectedCard?.id === card.id) && (
                 <p className="branch-address">{card.address}</p>
               )}
             </div>
@@ -149,11 +157,11 @@ const Branch = () => {
         </button>
       </div>
 
-      <Modal  show={showGallery} onHide={handleCloseGallery} size="lg" centered>
+      <Modal show={showGallery} onHide={handleCloseGallery} size="lg" centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedCard?.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{backgroundColor : 'black'}}>
+        <Modal.Body style={{ backgroundColor: "black" }}>
           <div className="gallery-container">
             <div className="main-image-container">
               <img
@@ -182,11 +190,6 @@ const Branch = () => {
             </div>
           </div>
         </Modal.Body>
-        {/* <Modal.Footer>
-          <button className="btn btn-secondary" onClick={handleCloseGallery}>
-            Close
-          </button>
-        </Modal.Footer> */}
       </Modal>
     </div>
   );
