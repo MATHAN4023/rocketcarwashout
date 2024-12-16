@@ -6,17 +6,17 @@ const navItems = ["Home", "About", "Services", "Contact"];
 
 const Appbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [alertOpen, setAlertOpen] = useState(false); // State to control alert visibility
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  // Smooth scroll to section
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setMobileOpen(false); // Close drawer after scrolling (for mobile)
+      setMobileOpen(false);
     }
   };
 
@@ -41,7 +41,6 @@ const Appbar = () => {
       {/* AppBar */}
       <header className={`appbar ${visible ? "visible" : "hidden"}`}>
         <div className="appbar-container">
-          {/* Logo */}
           <img src={logo} alt="Logo" className="logo" />
 
           {/* Navigation Items */}
@@ -59,10 +58,15 @@ const Appbar = () => {
               ))}
             </ul>
           </nav>
-          
 
           {/* Book Now Button */}
-          <button className="book-now">Book Now</button>
+          <button
+            className="book-now"
+            id="Booknow"
+            onClick={() => setAlertOpen(true)}
+          >
+            Book Now
+          </button>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -90,6 +94,19 @@ const Appbar = () => {
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Stylish Alert Box */}
+      {alertOpen && (
+        <div className="alert-box-overlay">
+          <div className="alert-box">
+            <h2>Coming Soon!</h2>
+            <p>We're working hard to make this feature available. Stay tuned!</p>
+            <button className="alert-close" onClick={() => setAlertOpen(false)}>
+              Close
+            </button>
+          </div>
         </div>
       )}
     </div>

@@ -6,6 +6,8 @@ import TM1 from '../../Assets/Image/RocketBranch/Testimon/T1.jpg'
 import TM2 from '../../Assets/Image/RocketBranch/Testimon/T2.png'
 import TM3 from '../../Assets/Image/RocketBranch/Testimon/T3.png'
 import TM4 from '../../Assets/Image/RocketBranch/Testimon/Pradeep.JPG'
+import TM5 from '../../Assets/Image/RocketBranch/Testimon/Sound1.jpg'
+import TM6 from '../../Assets/Image/RocketBranch/Testimon/Mathan.JPG'
 
 const TestimonialsCarousel = () => {
   const testimonials = [
@@ -17,24 +19,24 @@ const TestimonialsCarousel = () => {
       designation: "Social Media Influencer",
     },
     {
-      image: TM2, // Replace with actual image
+      image: TM6, // Replace with actual image
       quote: 
         "Super friendly staff and fantastic attention to detail. My car hasn’t looked this good in years!",
-      name: "Vikram",
-      designation: "Photographer",
+      name: "Mathan",
+      designation: "Developer",
     },
     {
-      image: TM3, // Replace with actual image
+      image: TM5, // Replace with actual image
       quote: 
         "A truly hassle-free service. Quick, professional, and worth every penny. Great job!",
-      name: "Arun",
-      designation: "Banker",
+      name: "Sowndhar",
+      designation: "Photographer",
     },
     {
       image: TM2, // Replace with actual image
       quote: 
         "They took care of everything! The service was excellent, and my car looks spotless inside and out.",
-      name: "Divya",
+      name: "Ashwin",
       designation: "Content Creator",
     },
     
@@ -51,7 +53,7 @@ const TestimonialsCarousel = () => {
     <div className="d-flex justify-content-center align-items-center vh-100 text-white">
       <div className="w-75">
         <h2 className="text-center mb-4 about-txt" data-aos="fade-down">
-          Our Customers' Reviews
+          Our Customers Reviews
         </h2>
         <Carousel
           indicators={false}
