@@ -19,6 +19,7 @@ import Franchise from "./Components/Franchise/Franchise";
 import Whyus from "./Components/Whyus/Whyus";
 import Appbar from "./Components/Appbar/Appbar";
 import Branch from "./Components/Branck/Branch";
+import Mainbranch from "./Components/Mainbarnch/Mainbranck";
 
 
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/whyus" element={<Whyus />} />
         <Route path="/appbar" element={<Appbar />} />
         <Route path="/branch" element={<Branch />} />
+        <Route path="/mainbranch" element={<Mainbranch />} />
       </Routes>
     </Router>
   );

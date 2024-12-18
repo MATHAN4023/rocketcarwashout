@@ -1,19 +1,28 @@
 import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { Modal } from "react-bootstrap";
-import "./Branch.css";
+import './Branch.css'
+
 import v1 from "../../Assets/Image/RocketBranch/Villankurichi/1.png";
 import v2 from "../../Assets/Image/RocketBranch/Villankurichi/2.png";
 import v3 from "../../Assets/Image/RocketBranch/Villankurichi/3.png";
+import v11 from "../../Assets/Image/selected/1.JPG"
+import v12 from "../../Assets/Image/selected/2.JPG"
+import v13 from "../../Assets/Image/selected/3.JPG"
+import v14 from "../../Assets/Image/selected/4.JPG"
+import v15 from "../../Assets/Image/selected/5.JPG"
+import v16 from "../../Assets/Image/selected/6.JPG"
+import v17 from "../../Assets/Image/selected/7.JPG"
+
 import T1 from "../../Assets/Image/RocketBranch/Place/Coimbatore.png";
 import T2 from "../../Assets/Image/RocketBranch/Place/Chennai.png";
 import T3 from "../../Assets/Image/RocketBranch/Place/Namakkal1.png";
 import T4 from "../../Assets/Image/RocketBranch/Place/Andhra Pradesh.png";
 import T5 from "../../Assets/Image/RocketBranch/Place/CB1.png";
 
-import N1 from "../../Assets/Image/RocketBranch/Namakal/N1.png";
-import N2 from "../../Assets/Image/RocketBranch/Namakal/N2.png";
-import N3 from "../../Assets/Image/RocketBranch/Namakal/N3.png";
+
+import N4 from "../../Assets/Image/RocketBranch/Namakal/N4.png";
+import N5 from "../../Assets/Image/RocketBranch/Namakal/N5.png";
 
 import C1 from "../../Assets/Image/RocketBranch/Chennai/C1.png";
 import C2 from "../../Assets/Image/RocketBranch/Chennai/C2.png";
@@ -24,6 +33,8 @@ import K1 from "../../Assets/Image/RocketBranch/Kownd/K1.png";
 import K2 from "../../Assets/Image/RocketBranch/Kownd/K2.png";
 
 import A1 from "../../Assets/Image/RocketBranch/Andra/A1.png";
+import A2 from "../../Assets/Image/RocketBranch/Andra/A2.png";
+import A3 from "../../Assets/Image/RocketBranch/Andra/A3.png";
 
 const Branch = () => {
   const cards = [
@@ -33,7 +44,7 @@ const Branch = () => {
       image: T1,
       address:
         "67/1a, Kalapatti Main Road, Rathinagiri Nagar, Villankurichi, Coimbatore, Tamil Nadu 641035",
-      gallery: [v1, v2, v3],
+      gallery: [v11, v12, v13 , v14, v15, v16, v17],
     },
 
     {
@@ -42,7 +53,7 @@ const Branch = () => {
       image: T3,
       address:
         "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
-      gallery: [N1, N2, N3],
+      gallery: [N4,N5],
     },
     {
       id: 4,
@@ -66,7 +77,7 @@ const Branch = () => {
       image: T4,
       address:
         "Madanapalle Rd, gangavaram, palamaner, Reddivaripalle, Andhra Pradesh 517408",
-      gallery: [A1],
+      gallery: [A1,A2,A3],
     },
   ];
 
@@ -86,14 +97,13 @@ const Branch = () => {
   const handleCloseGallery = () => setShowGallery(false);
   const handleThumbnailClick = (image) => setCurrentImage(image);
 
-  // Update isMobile based on window width
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call on initial load
+    handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -102,7 +112,7 @@ const Branch = () => {
 
   const settings = {
     infinite: true,
-    slidesToShow: 4, // Show 4 cards in a row
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -133,7 +143,6 @@ const Branch = () => {
                 />
               </div>
               <h5 className="branch-card-title">{card.title}</h5>
-              {/* Show address only on mobile or when hovering */}
               {(isMobile || selectedCard?.id === card.id) && (
                 <p className="branch-address">{card.address}</p>
               )}
@@ -188,6 +197,10 @@ const Branch = () => {
                 />
               ))}
             </div>
+          </div>
+          <div className="modal-address" style={{ marginTop: "20px", color: "white" }}>
+            <h5>Address:</h5>
+            <p>{selectedCard?.address}</p>
           </div>
         </Modal.Body>
       </Modal>

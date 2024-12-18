@@ -15,37 +15,7 @@ const services = [
 ];
 
 const Exclusive = () => {
-  // const sectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (sectionRef.current) {
-  //       const rect = sectionRef.current.getBoundingClientRect();
-  //       const viewportHeight = window.innerHeight;
-  //       const progress = Math.max(
-  //         0,
-  //         Math.min(1, 1 - rect.top / (viewportHeight * 0.1))
-  //       );
-
-  //       const startColor = "rgba(242, 0, 0, 0.31)";
-  //       const endColor = "#f20000bc";
-  //       const interpolatedColor = gsap.utils.interpolate(startColor, endColor, progress);
-
-  //       gsap.to(sectionRef.current, {
-  //         backgroundColor: interpolatedColor,
-  //         duration: 0.3,
-  //         ease: "power1.out",
-  //       });
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
+ 
   return (
     // <div className="exclusive-section" ref={sectionRef}>
     <div className="exclusive-section" id="services">

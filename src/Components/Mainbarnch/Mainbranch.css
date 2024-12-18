@@ -1,0 +1,41 @@
+.imgcl img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .subtextstart {
+    font-size: x-large;
+    color: gray;
+  }
+
+  .textal{
+    text-align: center;
+  }
+  
+  .headtextstar {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .myflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .headtextstar {
+      text-align: center;
+    }
+  
+    .subtextstart {
+      text-align: center;
+    }
+    .TEXTLEY{
+        margin-top: 2rem;
+        font-size: XX-large;
+    }
+  }
+  

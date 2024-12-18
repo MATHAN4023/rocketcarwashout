@@ -15,6 +15,7 @@ import Franchise from "../Franchise/Franchise";
 import Whyus from "../Whyus/Whyus";
 import Appbar from "../Appbar/Appbar";
 import Branch from "../Branck/Branch";
+import Mainbranch from "../Mainbarnch/Mainbranck";
 
 
 function AllComponent() {
@@ -26,14 +27,15 @@ function AllComponent() {
       <Counter />
       <Exclusive />
       <Serviceimg />
-      <About />
       <Whyus />
       <Franchise />
-      <Star />
+      <About />
+      <Mainbranch />
       <Locations />
       <Branch />
       <Appinstall />
       <TestimonialsCarousel />
+      <Star />
       <Footer />
 
     </div>

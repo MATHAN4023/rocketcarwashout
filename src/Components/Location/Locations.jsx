@@ -81,7 +81,7 @@ const Locations = () => {
 
   return (
     <div className="container aboutcontainer my-5">
-      <hr style={{color:'white'}} />
+      
       <div className="row">
         <div className="col text-center about-txt" data-aos="fade-down">
           Our Branches
