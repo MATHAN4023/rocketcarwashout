@@ -5,6 +5,7 @@ import L from "leaflet";
 import "./Locations.css";
 import rocket from "../../Assets/Icons/rocket.jpg";
 import rocketmark from "../../Assets/Icons/locationmark.png";
+import Mainbranch from "../Mainbarnch/Mainbranck";
 
 // Custom marker icon
 const shopIcon = new L.Icon({
@@ -81,7 +82,7 @@ const Locations = () => {
 
   return (
     <div className="container aboutcontainer my-5">
-      
+      <hr style={{ color: "white" }} />
       <div className="row">
         <div className="col text-center about-txt" data-aos="fade-down">
           Our Branches
@@ -164,6 +165,8 @@ const Locations = () => {
           </div>
         </div>
       </div>
+
+      <Mainbranch />
     </div>
   );
 };

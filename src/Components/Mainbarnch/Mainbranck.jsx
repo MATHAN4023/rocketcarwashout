@@ -14,10 +14,10 @@ import v17 from "../../Assets/Image/selected/7.JPG";
 function Mainbranch() {
   return (
     <div className="container text-white">
-      <hr style={{ color: "white" }} />
+      
       <div className="row">
         <div className="col text-center about-txt" data-aos="fade-down">
-        Prime Location
+        
         </div>
       </div>
       <div className="container1  my-5">
@@ -50,7 +50,10 @@ function Mainbranch() {
         </div>
         <div className="col-lg-6 col-sm-12 myflex textal">
           <div>
-            <p className="headtextstar TEXTLEY">ROCKET CARWASH - VILLANKURICHI</p>
+            <p className="headtextstar TEXTLEY">Prime Location</p>
+          </div>
+          <div>
+            <p>ROCKET CARWASH - VILLANKURICHI   </p>
           </div>
           <div>
             <p className="subtextstart">

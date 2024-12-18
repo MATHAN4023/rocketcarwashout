@@ -30,7 +30,7 @@ function AllComponent() {
       <Whyus />
       <Franchise />
       <About />
-      <Mainbranch />
+      
       <Locations />
       <Branch />
       <Appinstall />

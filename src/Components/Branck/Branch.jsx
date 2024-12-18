@@ -126,6 +126,7 @@ const Branch = () => {
   };
 
   return (
+    
     <div className="branch-carousel-container">
       <Slider ref={sliderRef} {...settings}>
         {cards.map((card) => (
