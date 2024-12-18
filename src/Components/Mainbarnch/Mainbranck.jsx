@@ -21,7 +21,7 @@ function Mainbranch() {
         </div>
       </div>
       <div className="container1  my-5">
-        <div className="col-lg-6 col-sm-12 imgcl">
+        <div className="col-lg-6 col-sm-12 imgcl borderradies">
           <Carousel
             showThumbs={false}
             autoPlay={true}
