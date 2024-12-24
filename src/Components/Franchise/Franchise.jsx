@@ -158,7 +158,7 @@ function Franchise() {
             Close
           </Button>
           <Button
-            variant="primary"
+            variant="danger"
             onClick={handleSubmit}
             disabled={isSubmitting} // Disable while submitting
           >

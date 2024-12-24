@@ -35,14 +35,14 @@ const locations = [
     lng: 78.16651583341715,
     name: "Rocket CarWash - Namakkal",
     address: "Pon Nagar, Salem - Namakkal Rd, opposite to Indian Bank, Swamy Nagar, Namakkal, Tamil Nadu 637001",
-    phone: "+91 456 789 0123",
+    phone: "+91 7358847473",
   },
   { 
     lat: 13.085186376589453,
     lng: 80.1769089013419,
     name: "Rocket CarWash - Mogappair",
     address: " 141, Paneer Nagar Main Rd, VGP Nagar, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037",
-    phone: "+91 123 456 7890",
+    phone: "+91 908 781 1110",
   },
   { 
     lat: 13.531302,

@@ -173,7 +173,7 @@
 
 /* Close Button */
 .alert-close {
-  background: #007bff;
+  background: red;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -183,7 +183,7 @@
 }
 
 .alert-close:hover {
-  background: #0056b3;
+  background: red;
 }
 
 /* Animation */

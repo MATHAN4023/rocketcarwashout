@@ -13,3 +13,8 @@ body{
 html{
     background-color: black!important;
 }
+
+.drawer{
+    z-index: 2000 !important;
+    background-color: black !important;
+}
